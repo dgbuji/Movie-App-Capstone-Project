@@ -2,5 +2,6 @@ apps:
   - name: movie_app
     path: /app
     env: python
+    pythonVersion: Python 3.12
     buildCommand: pip install -r requirements.txt
     startCommand: python -m uvicorn movie_app.main:app --host 0.0.0.0 --port 8000
