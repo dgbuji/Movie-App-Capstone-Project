@@ -1,0 +1,9 @@
+.env
+__init__.py
+*.env
+*.env.*
+*.gitignore
+node_modules/
+venv/
+*.pyc
+__pycache__/
