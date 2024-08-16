@@ -1,9 +1,9 @@
 from fastapi.encoders import jsonable_encoder
 from bson.objectid import ObjectId
 from fastapi import HTTPException, status
-from movie_app.database import movies_collection, users_collection, ratings_collection, comments_collection
-from movie_app.schema import MovieCreate, MovieUpdate, UserCreate, UserBase, UserInDb, UserUpdate, UserCreate, CommentCreate, RatingCreate, MovieDelete
-from movie_app.serializer import movie_serializer, user_serializer, comment_serializer, rating_serializer, user_serializer_password
+from database import movies_collection, users_collection, ratings_collection, comments_collection
+from schema import MovieCreate, MovieUpdate, UserCreate, UserBase, UserInDb, UserUpdate, UserCreate, CommentCreate, RatingCreate, MovieDelete
+from serializer import movie_serializer, user_serializer, comment_serializer, rating_serializer, user_serializer_password
 
 
 

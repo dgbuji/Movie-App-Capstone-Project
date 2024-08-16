@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordRequestForm
-from movie_app.crud import movie_crud_service, user_crud_service, comment_crud_service, rating_crud_service
-from movie_app.schema import MovieCreate, MovieUpdate, UserInDb,UserCreate, UserBase, CommentCreate, RatingCreate
-from movie_app.auth import pwd_context, authenticate_user, create_access_token, get_current_user
-from movie_app.logger import get_logger
+from crud import movie_crud_service, user_crud_service, comment_crud_service, rating_crud_service
+from schema import MovieCreate, MovieUpdate, UserInDb,UserCreate, UserBase, CommentCreate, RatingCreate
+from auth import pwd_context, authenticate_user, create_access_token, get_current_user
+from logger import get_logger
 
 app = FastAPI()
 

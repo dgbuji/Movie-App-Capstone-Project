@@ -1,8 +1,8 @@
 import pytest, random, string
 from fastapi.testclient import TestClient
 from bson import ObjectId
-from movie_app.main import app
-from movie_app.auth import get_current_user
+from main import app
+from auth import get_current_user
 
 ## Note that for the tests to pass, a user will have to be signed up and logged in the app.
 

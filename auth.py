@@ -7,9 +7,9 @@ from passlib.context import CryptContext
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from dotenv import load_dotenv
-from movie_app.logger import logger
+from logger import logger
 
-from movie_app.crud import user_crud_service
+from crud import user_crud_service
 
 
 UTC = timezone(offset=timedelta(0))
